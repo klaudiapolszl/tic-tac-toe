@@ -1,0 +1,45 @@
+@media (max-width: 1145px) {
+  .main .main-container {
+    width: 95%;
+  }
+}
+@media (max-width: 840px) {
+  .main .main-container {
+    width: 100%;
+  }
+  .main .main-container .game-board {
+    width: 40%;
+  }
+  .main .main-container .game-info-status {
+    width: 40%;
+  }
+}
+@media (max-width: 805px) {
+  .main .main-container .game-board {
+    width: 50%;
+  }
+}
+@media (max-width: 775px) {
+  .main .main-container .game-board {
+    width: 100%;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .main .main-container .game-info-status {
+    width: 100%;
+    text-align: center;
+  }
+  .main .main-container ol.game-info-moves{
+    margin: 0 auto;
+    display: block;
+    float: none;
+    max-width: fit-content;
+  }
+}
+@media (max-width: 370px) {
+  .main .main-container .game-board .square {
+    height: 75px;
+    width: 75px;
+  }
+}

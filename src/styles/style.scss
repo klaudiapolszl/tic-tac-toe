@@ -1,0 +1,94 @@
+$font-style: "Oswald", Futura, sans-serif;
+$orange: #fa4a11;
+$navy-blue: #224559;
+$grey: #8097a385;
+$background: #ffffffe0;
+$white: #fff;
+
+body {
+  padding: 20px;
+  font-family: $font-style;
+  background-image: url("../images/pic1.jpg");
+  background-size: cover;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 20px $grey;
+    border-radius: 20px;
+    width: 70%;
+    padding: 45px 0px;
+    background-color: $background;
+    .main-container-title{
+      font-size: 39px;
+      text-align: center;
+      color: $navy-blue;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .game-board{
+      padding: 35px;
+      float: left;
+      width: 40%;
+      .board-row:after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+      .square {
+        background: $white;
+        border: 3px solid $navy-blue;
+        float: left;
+        font-size: 33px;
+        font-weight: bold;
+        height: 100px;
+        margin-right: -3px;
+        margin-top: -3px;
+        padding: 0;
+        text-align: center;
+        width: 100px;
+      }
+      .square:focus {
+        outline: none;
+      }
+    }
+    .game-info-status {
+      margin-bottom: 14px;
+      font-size: 30px;
+      float: left;
+      width: 50%;
+    }
+    .game-info-moves{
+      display: block;
+      float: left;
+      margin-left: -30px;
+      .history-btn {
+        border-radius: 13px;
+        padding: 7px 13px;
+        background: $orange;
+        color: $white;
+        border: none;
+        font-family: $font-style;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .history-btn:focus {
+        outline: none;
+      }
+      .history-btn--selected{
+        background-color: $navy-blue;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
